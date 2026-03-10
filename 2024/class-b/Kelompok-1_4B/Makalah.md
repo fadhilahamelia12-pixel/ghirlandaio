@@ -62,7 +62,7 @@ Adapun tujuan penulisan makalah ini adalah:
 
 **A. Kesimpulan**
 
-**B. Saran**
+
 
 
 
