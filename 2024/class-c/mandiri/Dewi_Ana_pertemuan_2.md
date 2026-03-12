@@ -4,7 +4,7 @@
 Sebagaimana manusia yang hidup di zaman modern apakah masih perlu mengikuti nilai-nilai keagamaan yang di masa lalu atau
 dinilai sejarah atau kita perlu memperbaharui juga nilai agama kita ?
 
-    Dalam buku Homo Deus: ABrief History of Tomorrow karya Yuvual Noah Harari, dijelaskan bahwa nilai-nilai keagamaan memiliki
+Dalam buku Homo Deus: ABrief History of Tomorrow karya Yuvual Noah Harari, dijelaskan bahwa nilai-nilai keagamaan memiliki
 peran penting penting dalam sejarah manusia karena membantu menyatukan masyarakat dan memberikan kerangka moral bersama, Namun
 seiring perkembangan Zaman modern, banyak fungsi yang dahulu dijalankan oleh agama mulai diambil alih oleh ilmu pengetahuan 
 dan teknologi, Seperti dalam menjelaskan fenomena alam, kesehatan, dan kehidupan sosial. Harari berpendapat bahwa manusia modern 
