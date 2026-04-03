@@ -3,7 +3,7 @@
 ## Latar Belakang
   Teknologi sudah banyak memengaruhi algoritma hidup manusia, namun pada abad ke-21 ini, teknologi sudah berkemnbang lebih pesat dan menimbulkan persoalan yang lebih kompleks. Dikutip dari Wall Journal Street, banyak sekolah dasar di China yang menerapkan teknologi Artificial Intelligence (AI) dalam proses pembelajaran (Hong et al., 2019). Pemerintah China mengembangkan alat ikat kepala yang sudah terintegrasi dengan AI untuk memonitor tingkat fokus murid. Hal ini bertujuan untuk meningkatkan performa akademik, akan tetapi sebagian pihak menilai bahwa tindakan ini terlalu memberatkan siswa.
   
-  Tulisan sederhana ini mencoba memberikan interpretasi yang menjabarkan problematika dalam konteks implikasi teknologi dalam kehidupan manusia , dengan mengajukan beberapa pertanyaan Bagaimana  teknologi mempengaruhi kehidupan manusia? semoga bisa menjadi jawaban atas problematika teknologi dalam kehidupan manusia
+  Tulisan sederhana ini mencoba memberikan interpretasi yang menjabarkan problematika dalam konteks implikasi teknologi dalam kehidupan manusia , dengan mengajukan sebuah pertanyaan Bagaimana  teknologi mempengaruhi kehidupan manusia? semoga bisa menjadi jawaban atas problematika teknologi dalam kehidupan manusia
 
 ## Metode Penulisan
   Tulisan ini menggunakan konsep tulisan metode kualitatif, Penulis menggunakan menggunakan metode studi kepustakaan (literature review) dengan berfokus pada analisis sumber primer yang berasal dari jurnal dan sumber sekunder yang berupa karya cetak maupun digital.
