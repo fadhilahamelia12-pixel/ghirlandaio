@@ -104,7 +104,7 @@ Adapun pola hubungan antara kode sumber terbuka (open source) dan kode sumber te
 
 3. Adanya perbedaan tujuan, pengembang open source lebih mementingkan  tujuan untuk menjunjung kepentingan kolaborasi antara pengembang dan tidak terlalu mementingkan masalah hak cipta terkait dengan kode atau program yang dibuatnya sedangkan pengembang closed source lebih mementingkan gagasan untuk mendapatkan hak kekayaan intelektual seperti lisensi, hak cipta, dan bayaran atas usaha yang dilakukan dalam pengembangannya. 
 
-Jadi intinya pola hubungan dari keduanya ialah kompetitif karena keduanya ini memiliki gagasan yang sangat berbeda namun terkadang kode sumber terbuka dan kode sumber tertutup ini juga saling bergantung karena dilihat dari sejarah di atas awalnya gagasan closed source ini lahir dari gagasan open source yang dikembangkan dan sebaliknya saat open source semakin berkembang sebagian program closed source berubah menjadi pengembangan open source seperti Mozilla Firefox.
+Jadi intinya pola hubungan dari keduanya ialah kompetitif karena keduanya ini memiliki gagasan yang sangat berbeda dan memiliki cara berkembangnya tersendiri serta memiliki eksistensi sendiri namun terkadang kode sumber terbuka dan kode sumber tertutup ini juga saling bergantung karena dilihat dari sejarah di atas awalnya gagasan closed source ini lahir dari gagasan open source yang dikembangkan dan sebaliknya saat open source semakin berkembang sebagian program closed source berubah menjadi pengembangan open source seperti Mozilla Firefox.
 
 ### 2.5 Sikap Kami terhadap Kode Sumber Terbuka atau Kode Sumber Tertutup
 
