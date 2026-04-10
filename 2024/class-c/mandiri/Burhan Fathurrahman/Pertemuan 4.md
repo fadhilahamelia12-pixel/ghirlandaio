@@ -11,3 +11,5 @@ Kapitalisme merupakan sistem ekonomi yang mengatur produksi segala sumber daya d
 ### Kesimpulan ###
 
 Hubungannya pendapat Adam Smith berpendaat closed source adalah bahwa segala sesuatu value nya ditentukan oleh pasar bebas dan berpendapat pentingnya pasar bebas dan kepemilikan pribadi sebagai pendorongan produksi dan inovasi dengan menakanisme "invisible hand". Pendapat beliau ini sejalan dengan konsep "Closed Source" yang di mana konsep ini bertujuan komersial untuk mencari keuntungan.
+
+Sumber : Buku Troublemakers: Silicon Valley's Coming of Age
