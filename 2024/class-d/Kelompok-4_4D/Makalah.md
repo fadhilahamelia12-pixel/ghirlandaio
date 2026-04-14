@@ -122,14 +122,9 @@ Vektor keamanan siber bagi perpustakaan digital atau arsip digital mengacu kepad
       Faktor ini merupakan di mana institusi perlu mengangkat standar internasional seperti ISO/IEC 27001 atau kerangka kerja NIST sebagai prosedur baku dalam manajemen resiko dan keamanan informasi. Hal ini juga perlu dijalankan bersama Standarisasi Prosedur Operasional (SOP) yang mencakup klasifikasi arsip, jadwal retensi, penggunaan audit untuk melacak aktivitas pengguna dan disiplin dalam pencacatan metadata untuk menjagaa utentisistas
       # BAB III PENUTUP
 ## 3.1 Kesimpulan
-Perkembangan teknologi informasi dan komunikasi yang sangat pesat telah membawa perubahan besar dalam berbagai aspek kehidupan, termasuk dalam pengelolaan perpustakaan dan arsip digital. Di satu sisi, teknologi memberikan kemudahan, efisiensi, dan akses informasi yang luas. Namun di sisi lain, ketergantungan terhadap sistem digital juga meningkatkan risiko dan kerentanan terhadap ancaman siber yang semakin kompleks.
+Perkembangan teknologi membawa kemudahan dalam pengelolaan perpustakaan dan arsip digital, namun juga meningkatkan risiko ancaman siber. Oleh karena itu, penerapan prinsip keamanan seperti kerahasiaan, integritas, dan ketersediaan menjadi sangat penting untuk melindungi data dan menjaga kepercayaan publik.
 
-Dalam konteks ini, perpustakaan dan arsip digital sebagai lembaga pengelola informasi memiliki tanggung jawab tidak hanya dalam menyediakan akses informasi, tetapi juga dalam menjaga keamanan dan keandalan data. Penerapan prinsip dasar keamanan siber yang meliputi kerahasiaan, integritas, dan ketersediaan menjadi hal yang sangat penting untuk memastikan bahwa informasi tetap terlindungi, tidak dimanipulasi, dan dapat diakses saat dibutuhkan.
-
-Selain itu, keamanan siber tidak hanya bersifat teknis, tetapi juga memiliki dimensi etis yang berkaitan dengan perlindungan privasi, keadilan, dan kepercayaan publik. Berbagai risiko keamanan, baik yang berasal dari faktor teknologi maupun manusia, menunjukkan bahwa sistem perpustakaan digital memerlukan pengelolaan yang komprehensif dan berkelanjutan.
-
-Oleh karena itu, diperlukan upaya peningkatan pada berbagai aspek, seperti infrastruktur teknologi, sumber daya manusia, serta tata kelola dan kebijakan keamanan. Dengan penerapan prinsip keamanan siber yang terintegrasi dan berlandaskan nilai-nilai etika, perpustakaan dan arsip digital dapat terus berkembang sebagai ekosistem informasi yang aman, terpercaya, dan relevan di era digital.
-
+Keamanan siber tidak hanya bersifat teknis, tetapi juga berkaitan dengan nilai etika seperti privasi dan keadilan. Untuk itu, diperlukan peningkatan pada aspek infrastruktur, sumber daya manusia, serta kebijakan agar tercipta sistem informasi yang aman, andal, dan terpercaya di era digital.
 # DAFTAR PUSTAKA
 
    
