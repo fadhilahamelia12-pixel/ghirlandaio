@@ -66,7 +66,48 @@ Perkembangan teknologi informasi telah memengaruhi perpustakaan dan arsip digita
 
 # **BAB II** **PEMBAHASAN**
 
-## 2.1 ##
+## 2.1 Evolusi 5 Hukum Perpustakaan ##  
+## 2.1.1 Masa Awal ( Dr. SR Ranganathan 1930) ## 
+Perpustakaan, sebagai sumber informasi, memang harus terus menyesuaikan diri supaya tetap relevan dengan kebutuhan para penggunanya. Ini sejalan dengan lima prinsip dasar perpustakaan yang menekankan bahwa perpustakaan selalu berkembang dan nggak pernah benar-benar statis.
+Sekarang, di era digital seperti sekarang, teknologi bikin informasi semakin gampang dijangkau dan diterapkan di banyak bidang kehidupan. Karena itu, perpustakaan perlu rutin memperbarui koleksi dan layanannya, supaya apa yang ditawarkan tetap sesuai dengan perkembangan zaman dan benar-benar berguna buat siapa saja yang datang mencari informasi.
+Dr. SR Ranganathan mencetuskan Lima Hukum Ilmu Perpustakaan pada tahun 1924. Pernyatan-pernyatan yang mewujudkan hukum-hukum ini dirumuskan pada tahun 1928. Hukum-hukum ini pertama kali diterbitkan dalam buku klasik Ranganathan yang berjudul Five Law of Library Science pada tahun 1931.
+1. Books Are For Use (Buku Untuk Digunakan)
+Hukum yang pertama mengandung dasar bahwa buku ada untuk
+digunakan. Tigkat keterpakaian koleksi (buku) menjadi titik penekanan
+disini. Setiap bahan pustaka yang ada di perpustakaan haruslah terpakai.
+Hal ini juga menunjukkan bahwa seberapa jauh koleksi yang ada di
+perpustakaan telah memenuhi kebutuhan informasi penggunanya (Zulaikha, 2008).
+2. Every Reader His/Her Book (Setiap Pembaca Memiliki Bukunya Masing-Masing)
+Hukum kedua bermakna bahwa setiap informasi yang dibutuhkan oleh
+pemustaka harus tersedia di perpustakaan. Pengadaan harus mengakomodir
+kebutuhan pemustaka. Meskibagaimanapun juga tidak satupun orang dapat
+memiliki semua buku yang diinginkannya. Namun perpustakaan harus
+memiliki dan menyediakan bahan pustaka seharusnya sangat
+menguntungkan bagi pembaca dan bahkan para peneliti (Zulaikha, 2008).
+3. Every Book Its Reader (Setiap Buku Memiliki pembacanya)
+Hukum ketiga menekankan pada open access atau layanan terbuka sebuah
+perpustakaan.hal ini bermakna bahwa setiap koleksi yang berada di
+perpustakaan haruslah dapat diakses oleh pemustaka. Dapat ditafsirkan
+bahwa setiap buku yang berada di perpustakaan pastilah memiliki
+pembacanya. Sehingga jika terdapat koleksi yang tidak dapat ditemukan,
+maka menjadi tugas pustakawan untuk menemukan dan mempercepat akses
+terhadap informasi tersebut (Zulaikha, 2008).
+4. Save The Time Of The Reader (Menghemat Waktu Pembaca)
+Hukum yang keempat menekankan pada kecepatan akses terhadap koleksi
+yang berada di perpustakaan. Perpustakaan tidak boleh menyianyakan dan membuang waktu pemustaka untuk mencari buku dalam waktu yang lama.
+Pengolahan bahan pustaka yang tepat dan infrastruktur pendukung menjadi
+salah satu kunci utama dalam hal kecepatan temu kembali informasi ini
+5. A library Is A Gowing Organism (Perpustakaan Adalah Organisme Yang Terus Berkembang)
+Hukum kelima memberitahu kepada kita, bahwa yang terpenting dari
+perpustakaan adalah bahwa perpustakaan itu selalu tumbuh dan
+berkembang serta berubah dan akan selalu mengalami hal seperti itu.
+Perpustakaan mengalami perkembangan seiring dengan berkembangnya
+teknologi dan tuntutan kebutuhan informasi pengguna. Apabila
+perpustakaan tidak berkembang tentulah perpustakan tidak akan bisa
+memenuhi fungsinya sebagai penyedia informasi. Disisi lain perpustakaan
+yang statis akan ditinggalkan penggunanya (Zulaikha, 2008).
+## 2.1.2 Masa Modern (Michael Gorman 1995) ##
+
 
 ## 2.2 ##
 
