@@ -1,25 +1,25 @@
-
-
-# penugasan kelompok 6
+# penugasan kelompok 7
 
 ## presentator
 ### case:
 
-Presentator mampu melakukan dan menjelaskan installasi base arch linux
+Presentator mampu melakukan dan menjelaskan installasi desktop arch linux
 
-| partition | type |
-|-----------|-------|
-| boot      | fat32 |
-| swap      | swap  |
-| root      | ext4  |
+| type         | value          |
+|--------------|-----------------|
+| network      | Network Manager |
+| Desktop      | Plasma          |
+| audio        | pipewire        |
+| filemanager  | dolphin         |
+| terminal     | kitty           |
 
 
 ### pengumpulan
 - presentator mengumpulkan penugasan di dalam repo penguasan masing masing pada hari Rabu, jam 07.30 AM  
-- keterlambatan pengumpulan tugas di berikan sanksi pemberian pinalti penilaian sebesar 50%.  
+- keterlambatan pengumpulan tugas di berikan sanksi pemberian pinalti penilaian sebesar 100%.  
 
 ### output:
-1. Dalam presentasi presentator mampu melakukan live installasi base arch linux.
+1. Dalam presentasi presentator mampu melakukan live installasi dekstop arch linux.
 2. slide presentasi google slide  
 3. dokumentasi dalam format markdowm  
 
