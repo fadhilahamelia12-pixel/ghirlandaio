@@ -41,7 +41,7 @@ Terdapat 3 opsi yang dapat digunakan untuk memindahkan file ISO ke flashdisk aga
 
 Booting merupakan proses saat komputer mulai menjalankan sistem operasi. Booting dari flashdisk dilakukan agar komputer dapat membuka installer Arch Linux dan memulai proses instalasi sistem operasi. Langkah yang dilakukan yaitu menyambungkan USB bootable ke komputer yang akan diinstal, kemudian masuk ke menu UEFI atau Boot Menu dengan menekan tombol seperti F2, F12, Del, atau ESC saat komputer mulai menyala, lalu pilih flashdisk sebagai perangkat boot utama.
 
-Setelah berhasil boot ke live environment Arch Linux, langkah selanjutnya yaitu memeriksa mode boot yang digunakan sistem, apakah UEFI atau BIOS, dengan menjalankan perintah 
+Setelah berhasil boot ke live environment Arch Linux, langkah selanjutnya yaitu memeriksa mode boot yang digunakan sistem, apakah UEFI atau BIOS, dengan menjalankan perintah:
 
 ```cat /sys/firmware/efi/fw_platform_size```
 
