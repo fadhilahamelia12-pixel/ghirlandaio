@@ -78,9 +78,17 @@ sesuaikan dengan layout ini
 <img width="937" height="271" alt="image" src="https://github.com/user-attachments/assets/0ae7bdc3-e491-449b-976c-05096373697e" />
 
 Device pertama adalah boot
+
+
 1. ketik ```n``` untuk membuat partisi baru
+
+
 2. gunakan default number saja klik enter, misal ```nvme0n1p6```
+
+
 3. gunakan default yang kedua enter saja
+
+
 4. lalu tentukan berapa memory untuk boot sesuai panduan di arch wiki adalah 1G jadi ketik ```+1G```
 
 
