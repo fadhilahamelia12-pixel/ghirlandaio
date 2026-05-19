@@ -101,18 +101,41 @@ misalnya nama devicenya adalah
 
 lalu format disk
 
+untuk boot
+```
+mkfs.fat -F 32 /dev/nvme0np6
+```
 
+untuk swap
+```
+mkswap /dev/nvme0np7
+swapon /dev/nvme0np7
+```
 
+untuk root
+```
+# mkfs.ext4 /dev/nvme0np8
+```
 
 https://wiki.archlinux.org/title/Partitioning#Example_layouts
 
 ## Format partisi
+mount root ke ```/mnt```
+```
+mount /dev/nvme0np8 /mnt
+```
+untuk UEFI System mount ke uf system contoh
+```
+# mount --mkdir /dev/efi_system_partition /mnt/boot
+```
 
 ## Mirror
 jika diperlukan semisalnya downloadnya masih lambat
 ```
 nano /etc/pacman.d/mirrorlist
 ```
+pilih yang kaliah rasa lebih cocok dan pindahkan paling atas
+
 ## Install packages penting
 
 paket untuk basic linux kernel dan perangkat keras secara umum
