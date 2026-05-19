@@ -71,12 +71,23 @@ fdisk /dev/nvme0n1
 ```
 
 <img width="566" height="757" alt="image" src="https://github.com/user-attachments/assets/45b27646-d826-488b-b53a-48960bfde1ee" />
+
+
 1. ubah mode partisi dari MBR menggunakan GPT menggunakan ```g```
-2. cek berapa free disk yang sudah disiapkan untuk arch linux dengan tombol '''
-3. 
+2. cek berapa free disk yang sudah disiapkan untuk arch linux dengan tombol ```F``` ***kapital ya***
+
 sesuaikan dengan layout ini
 <img width="937" height="271" alt="image" src="https://github.com/user-attachments/assets/0ae7bdc3-e491-449b-976c-05096373697e" />
 
+Device pertama adalah boot
+1. ketik ```n``` untuk membuat partisi baru
+2. gunakan default number saja klik enter, misal ```nvme0n1p6```
+3. gunakan default yang kedua enter saja
+4. lalu tentukan berapa memory untuk boot sesuai panduan di arch wiki adalah 1G jadi ketik ```+1G```
+ubah tipe disknya
+1. lihat list tipe disk ```l```
+<img width="578" height="798" alt="image" src="https://github.com/user-attachments/assets/cd5a5bce-a0db-4d29-af3b-8f0165feb458" />
+2. 
 https://wiki.archlinux.org/title/Partitioning#Example_layouts
 
 ## Format partisi
