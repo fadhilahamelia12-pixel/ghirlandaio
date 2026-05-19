@@ -63,6 +63,7 @@ dalam  menginstall desktop Arch Linux terdapat beberapa komponen penting yang ha
 # BAB II PEMBAHASAN
 
 ## 2.1 NetworkManager
+
 NetworkManager adalah program yang digunakan untuk mendeteksi dan mengatur konfigurasi jaringan agar sistem dapat terhubung ke internet secara otomatis, baik melalui jaringan kabel maupun nirkabel. Pada jaringan wireless, NetworkManager dapat memprioritaskan jaringan yang sudah dikenal dan secara otomatis berpindah ke jaringan yang lebih stabil, sedangkan pada jaringan kabel layanan ini akan lebih diprioritaskan dibandingkan koneksi wireless. Selain itu, NetworkManager juga mendukung koneksi modem dan beberapa jenis VPN sehingga memudahkan pengguna dalam mengelola berbagai jenis koneksi jaringan pada sistem Linux.
 
 1. Instalasi NetworkManager menggunakan
@@ -94,6 +95,7 @@ NetworkManager adalah program yang digunakan untuk mendeteksi dan mengatur konfi
    ```
 
 ## 2.2 Plasma
+
 Plasma adalah produk unggulan KDE, yang menawarkan lingkungan desktop tersedia yang paling dapat disesuaikan. Komunitas KDE mempunyai sasaran untuk membuatnya sederhana secara baku, dan berdaya ketika dibutuhkan. Plasma dirancang agar mudah digunakan, fitur-fitur yang tersedia di plasma itu seperti : Launcer, System Tray, Notification, Dicover dll. Plasma menawarkan lebih banyak fleksibilitas bagi pengguna yang mungkin ingin mengurangi ukuran instalasi mereka di kemudian hari.  KDE Plasma dikenal sebagai desktop environment yang modern, ringan, dan memiliki tampilan antarmuka yang menarik sehingga banyak digunakan pada sistem Linux desktop. Penjelasan Installasi KDE Plasma:
 
 1. Pertama-tama pastinya kita akan masuk ke Arch Linux terlebih dahulu, Jangan lupa untuk selalu memeriksa updetan terbaru
@@ -123,6 +125,7 @@ sudo systemctl start sddm.service
 ```
 
 ## 2.3 Pipwire
+
 PipeWire adalah sistem pengelola audio dan multimedia pada Linux yang digunakan untuk mengatur suara speaker, mikrofon, headset, Bluetooth audio, dan aplikasi multimedia lainnya. PipeWire merupakan pengganti modern untuk PulseAudio dan JACK karena memiliki performa lebih baik, latensi rendah, serta kompatibilitas yang luas. Pada Arch Linux, PipeWire sering digunakan pada desktop environment seperti KDE Plasma dan GNOME untuk mendukung sistem audio yang stabil dan modern.  
 
 1. Instalasi PipeWire menggunakan
@@ -158,6 +161,7 @@ PipeWire adalah sistem pengelola audio dan multimedia pada Linux yang digunakan 
    Tulisan tersebut menunjukkan bahwa PipeWire telah aktif dan berfungsi sebagai sistem audio utama pada Arch Linux.
 
 ## 2.4 Dolphin
+
 Dolphin adalah pengelola file bawaan Plasma. Tujuannya adalah untuk meningkatkan kemudahan penggunaan pada tingkat antarmuka pengguna. Dolphin hanya berfokus sebagai pengelola file. Selain itu, Dolphin juga mendukung fitur preview file untuk video, gambar, PDF, audio, dan berbagai format lainnya. Penjelasan Installasi KDE Plasma:
 
 1. Install Dolphin
@@ -171,6 +175,7 @@ sudo pacman -S dolphin
 2. Seletah semuanya selesai buka Doplphin File Manager
    
 ## 2.5 Kitty
+
 Kitty merupakan emulator terminal berbasis OpenGL yang dapat diprogram dan mendukung fitur TrueColor, ligatur, ekstensi protokol input keyboard, serta rendering gambar di dalam terminal. Kitty juga memiliki kemampuan tiling seperti GNU Screen atau tmux sehingga pengguna dapat membuka dan mengatur beberapa tab maupun jendela terminal dengan mudah melalui kombinasi tombol keyboard. 
 
 1. Install Kitty menggunakan
@@ -184,6 +189,7 @@ Kitty merupakan emulator terminal berbasis OpenGL yang dapat diprogram dan mendu
 2. Seletah semuanya selesai buka Terminal Kitty.
 
 ## 2.6 Tahap Akhir Instalasi
+
 Setelah seluruh proses instalasi dan konfigurasi komponen NetworkManager, KDE Plasma, PipeWire, Dolphin, dan Kitty selesai dilakukan, maka langkah akhir yang harus dilakukan adalah melakukan restart sistem untuk menerapkan seluruh konfigurasi yang telah diatur. Dengan merestart sistem menggunakan perintah;
 
 ```
@@ -196,6 +202,7 @@ Saat proses restart berlangsung, flashdisk installer Arch Linux harus dilepaskan
 
 ## 3.1 Kesimpulan
 
+Berdasarkan pembhasan di atas, dapat disimpulakn bahwa Arch Linux adalah sistem operasiLinnux yang fleksibel dan dapat di ubah menajadi desktop kontemporer dengan menambahkan komponen penting seperti Network Manager untuk mengatur jaringan internet, Plasma sebagai tampilan desktop, Pipewire untuk mengtur audio, Dolphin sebagai manager file dan Kitty sebagai terminal  modern. Agar sistem bekerja dengan baik proses insatalasi dapat dilakukan secara bertahap. Arch Linux dapat digunakan sebagai desktop yang ringan dan menarik setelah semua proses selesai dan sistem dihidupkan kembali. Proses instalasi juga meningkatkan pemahaman pengguna tentang cara kerja dan pembangunan sistem desktop Linux.
 
 # DAFTAR PUSTAKA
 
