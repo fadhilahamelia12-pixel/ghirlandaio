@@ -1,4 +1,4 @@
-# Instalasi Arch Linux
+# Instalasi Arch Linux 
 ## Preparation
 - Siapkan bootable USB yang berisi ISO Arch Linux.
 - Masuk ke mode BIOS dan nonaktifkan secure boot.
