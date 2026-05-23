@@ -153,6 +153,144 @@ Setelah persiapan instalasi selesai, dilanjutkan dengan mengecek indikator visua
 
   dari situ terlihat partisi-partisi linux yang telah di buat
 
+- Kemudian untuk perintah mount root ketik **mount dev/nvme0n1p7 /mnt** lalu klik enter kemudian ketik **lsblk -o name,fstype,size**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 19 46 53" src="https://github.com/user-attachments/assets/4605c927-8e66-433e-add4-10de2f390723" />
+  <img width="1280" height="530" alt="WhatsApp Image 2026-05-23 at 19 46 54" src="https://github.com/user-attachments/assets/bdece286-d212-4536-93fd-b1fcac680242" />
+
+- Setelah itu untuk perintah mount EFI ketik **mount --mkdir /dev/efi_system_partition /mnt/boot** kemudian ketik **lsblk**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 19 50 39" src="https://github.com/user-attachments/assets/924dbab6-df88-454f-9904-9d7237539831" />
+
+- Lanjut untuk perintah Instalasi Sistem Dasar ketik **pacstrap -K /mnt base linux linux-firmware base-devel neovim git networkmanager** lalu enter maka akan muncul tampilan ketika sedang instalasi.
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 19 55 29" src="https://github.com/user-attachments/assets/0076d217-36e0-427e-9f5d-ba2b7b78fe24" />
+
+- Setelah itu di lanjut ketik **genfstab -U /mnt > /mnt/etc/fstab** lalu enter kemudian ketik lagi **arch-chroot /mnt** lalu enter kemudian ketik lagi **ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime** setelah itu klik enter. Selanjutnya ketik lagi **hwclock --systohc**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 00 53" src="https://github.com/user-attachments/assets/66e83d4e-2ec3-4670-a638-b8d369099d73" />
+
+
+- Lanjut ketik lagi **locale-gen** kemudian klik enter, kemudian ketik **nvim /etc/locale.conf** lalu klik enter dan pencet huruf i maka akan muncul tampilan seperti ini.
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 05 28" src="https://github.com/user-attachments/assets/73a18fe5-6bc0-4926-b759-b39d88565f28" />
+
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 05 28 (1)" src="https://github.com/user-attachments/assets/90b7fc2c-1dac-4b94-a4d1-a6088e5e911c" />
+
+
+- Lanjutkan dengan ketik **LANG=en_US.UTF-8** Kemudian klik enter dan ketik lagi **:wq** setelah itu klik enter
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 14 14" src="https://github.com/user-attachments/assets/c1ba5204-149c-4dcb-bdba-c1aec8e1dd48" />
+
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 14 13" src="https://github.com/user-attachments/assets/22429367-86df-4b03-8bee-8afabd892e66" />
+
+
+- Lanjut ketik **echo "(masukan nama hostname)" > /etc/hostname**
+- Ketik **mkinitcpio -P**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 18 36" src="https://github.com/user-attachments/assets/b5ed216f-7c85-4540-91d1-a37dbb44ea7c" />
+
+- Lanjut ketik **useradd -m (masukan nama user yang ingin digunakan)** ini untuk menambahkan nama user.
+- Selanjutnya ketik **passwd (masukan nama user yang dipilih)** nah di situ masukan password yang ingin dipakai
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 23 36" src="https://github.com/user-attachments/assets/59608364-ad18-47dc-9dc7-879f4a207e8a" />
+
+
+- Setelah successfully lanjut ketik **echo '(nama user yang dipilih) ALL=(ALL:ALL) ALL' >> /etc/sudoers.d/none**
+- Lanjut lagi ketik **pacman -S grub efibootmgr os-prober** lalu enter kemudian ketik huruf **y**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 29 49" src="https://github.com/user-attachments/assets/975a27f3-2593-438a-9a3c-7517c4d439bb" />
+
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 31 52" src="https://github.com/user-attachments/assets/44f6d453-2168-4b97-9472-2217a170b80c" />
+
+- Setelah selesai menginstal lanjut ketik **grub-install --target=86_64-efi --efi-directory=/BOOT --bootloader-id=GRUB**
+- Kemudian ketik **nvim /etc/default/grub** lalu enter maka akan muncul tampilan seperti ini
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 36 14" src="https://github.com/user-attachments/assets/b47f1c35-4d85-43cb-9849-a5f370aab0bd" />
+
+- Perlu diketahui pada tulisan paling akhir setelah semua sudah dimuat, pada tulisan (#GRUB_DISABLE_OS_PROBER=false) nah hilangkan pada bagian # tersebut sehingga menjadi (GRUB_DISABLE_OS_PROBER=false) setelah itu klik enter
+- Di lanjut ketik **:wq** lalu klik enter lalu ketik **:wq**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 42 26" src="https://github.com/user-attachments/assets/019718db-462e-4d9d-a750-fbbb4d7a2b43" />
+
+- Setelah itu ketik **grub-mkconfig -o /boot/grub/grub.cfg**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 46 21" src="https://github.com/user-attachments/assets/0cfc7fc2-4ddb-4367-9f29-42b10e996ad0" />
+
+- Lalu ketik **exit** kemudian enter
+- Lalu ketik **umount -R /mnt** kemudian enter
+- Lalu ketik **reboot**
+  <img width="720" height="1280" alt="WhatsApp Image 2026-05-23 at 20 49 25" src="https://github.com/user-attachments/assets/4ecab776-01e7-44ee-b218-ca1572a393e7" />
+
+---
+
+## Proses Instalasi KDE Plasma ##
+
+
+Tunggu sampai masuk ke dalam halaman base linux, lalu masukan ussername yang sudah di buat klik enter lalu masukan passwordnya setelah itu ketik **sudo su** lalu masukan kembali passwordnya
+<img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 20 59 35" src="https://github.com/user-attachments/assets/5757acd9-86d4-45a8-9240-dd1e5483ccf8" />
+
+- Kemudian ketik **systemctl enable NetworkManager** lalu enter
+- Ketik lagi **systemctl start NetworkManager** lalu enter
+- Kemudian ketik lagi **systemctl status NetworkManager** klik enter lalu akan muncul tampilan seperti ini
+
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 06 17" src="https://github.com/user-attachments/assets/38a57d5d-08d5-4b5c-9c92-ff95f77104df" />
+
+- lalu setelah semuanya dimuat ketik lanjut **nmtui**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 06 17" src="https://github.com/user-attachments/assets/879907a5-fb4f-4bc1-88b1-84435a01a040" />
+
+- Tunggu sampai muncul halaman berwarna biru seperti ini lalu pilih opsi yang **Active a connection** lalu klik **ok**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 16 26" src="https://github.com/user-attachments/assets/44be1d99-2488-430c-bbd9-60fef271bccb" />
+
+- Kemudian sambungkan dengan wifi yang di inginkan  lalu masukan password lalu tunggu sampai masuk ke halaman root
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 16 26 (1)" src="https://github.com/user-attachments/assets/d16fa8db-5d11-4a0e-b5e3-ce1e7905f778" />
+
+- Untuk mengetahui apakah wifi sudah tersambung dengan baik kita bisa ketik **ping 1.1.1.1** lalu klik enter, jika muncul bacaan *network is unreachable* maka bisa di lanjut ketik **systemctl enable systemd-networkd** lalu klik enter
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 20 07" src="https://github.com/user-attachments/assets/b246dd23-f66a-441f-b6e0-43a2eaad1832" />
+
+- Selanjutnya ketik **systemctl start systemd-networkd**  lalu enter
+- Kemudian ketik **systemctl enable systemd-resolved** lalu klik enter
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 23 50" src="https://github.com/user-attachments/assets/0fe12b01-2a18-4ea4-b258-f346f3e24cf0" />
+
+- Nah untuk mengecek lagi apakah sudah benar benar tersambung dengan wifi yang kita inginkan ketik ulang **ping 1.1.1.1** lalu klik tombol ctrl+c
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 27 18" src="https://github.com/user-attachments/assets/b55e21da-37f3-4f8a-8a10-d2a4a42c111f" />
+
+- Kemudian untuk mulai mengisntal KDE Plasma maka ketik perinta **pacman -S plasma sddm pipwire pipwire-pulse pipewire- jack kitty firefox dolphin** lalu enter
+- Kemudian ketik 1 lalu enter
+- Lalu klik lagi angka 1 kemudian enter sampai muncul proses untuk download maka ketik **y**
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 33 50" src="https://github.com/user-attachments/assets/c8441dc1-73b1-4475-9597-9757d706caab" />
+
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 33 49" src="https://github.com/user-attachments/assets/8fb929b2-cf46-4dce-a8ef-85127db3aa5d" />
+
+
+- Lalu tunggu sampai proses instalasi selesai setelahnya ketik **systemctl enable sddm** kemudian enter
+- Setelah enter ketik lagi **systemctl start sddm** lalu klik enter
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 37 50" src="https://github.com/user-attachments/assets/960c9d24-045e-4c52-998f-3e8f5f4050f8" />
+  
+- Masukan Password yang sudah di buat sebelumnya
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 40 08" src="https://github.com/user-attachments/assets/b01928ca-164d-4dbb-8255-6f8466a76ca4" />
+
+
+- Dan Sudah masuk kedalam KDE Plasma
+  <img width="1280" height="576" alt="WhatsApp Image 2026-05-23 at 21 40 08 (1)" src="https://github.com/user-attachments/assets/5a2ff0c7-7284-4c30-a56c-20b4281999c1" />
+
+
+
+
+  
+
+
+  
+
+
+
+ 
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
 
   
 
