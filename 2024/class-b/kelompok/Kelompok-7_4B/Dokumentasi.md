@@ -1,4 +1,21 @@
-# LVM (Logical Volume Manager)
+# Instalasi linux with cis layout disk
+## menghubungkan ke internet
+
+```
+iwctl
+```
+lalu ketik
+
+```
+station wlan0 connect "namawifi"
+```
+lalu cek
+```
+ping 8.8.8.8
+```
+jika 
+
+
 ## Membuat Physical Volume
 Partisi yang paling besar digunakan sebagai Physical Volume.
 
