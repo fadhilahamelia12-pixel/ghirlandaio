@@ -1,34 +1,23 @@
-# Pentingnya Keamanan Siber dalam Perpustakaan dan Lembaga Arsip Digital
+# Peran Teknologi dalam Mendukung Akses Terbuka di Perpustakaan
+Hasil resume presentasi kelompok 4: Evolusi 5 Hukum Perpustakaan, Cyberethics, dan Keamanan Cyber dalam Pengelolaan Perpustakaan serta Arsip Digital
 
 ## Pendahuluan
-
-Perkembangan teknologi informasi dan komunikasi telah mendorong perpustakaan dan lembaga arsip bertransformasi ke dalam sistem digital. Digitalisasi ini memungkinkan akses informasi menjadi lebih cepat, luas, dan efisien. Namun, perubahan tersebut juga membawa konsekuensi berupa meningkatnya ketergantungan pada sistem teknologi informasi yang rentan terhadap berbagai ancaman siber.  
-
-Seiring dengan meningkatnya penggunaan sistem digital, keamanan siber menjadi hal yang sangat penting untuk menjaga keberlangsungan layanan serta melindungi data yang dikelola oleh perpustakaan dan lembaga arsip.
----
+Teknologi saat ini menjadi peran yang paling penting di layanan akses terbuka perpustakaan. Perannya dapat membantu perpustakaan menghadapi persaingan di antara banyaknya informasi digital, sekaligus menjadi produktivitas layanan agar lebih efektif (Darwis et al., 2019; Nurmanto & Gunawan, 2020). Artinya, dengan teknologi perpustakaan mampu menyesuaikan informasi yang ada dengan cara memotong waktu yang dulu menjadi masalah perpustakaan, menjadi lebih ringkas. Sehingga, pemustaka dapat langsung mengakses informasi digital yang mereka butuhkan dengan lebih cepat dan efisien.
 
 ## Pembahasan
+Peran teknologi dalam mendukung akses terbuka di perpustakaan sesuai dengan penerapan dalam buku Five Laws of Library Science. Dilihat dari prinsip nya yaitu Books are for Use dan Every Reader His/Her Book, teknologi digital dapat menjamin bahwa koleksi tidak hanya disimpan di rak secara cuma-cuma, tetapi harus benar-benar digunakan oleh pemustaka. Dengan memberikan akses terbuka, setiap orang dimanapun dan kapan pun dapat menemukan bahan pustaka yang mereka butuhkan. Dari digitalisasi koleksi inilah, menghasilkan peluang dalam memperluas layanan perpustakaan secara global.
 
-Latar belakang pentingnya keamanan siber dalam perpustakaan dan lembaga arsip digital berkaitan erat dengan digitalisasi layanan informasi. Perpustakaan modern kini tidak hanya menyimpan koleksi fisik, tetapi juga mengelola database digital, sistem akses online, serta layanan berbasis internet. Hal ini membuat sistem perpustakaan menjadi target potensial berbagai serangan siber. 
+Kemudian, prinsip Every Book Its Reader saat ini lebih dibuat menjadi mudah dengan sistem pencarian dan repositori yang cerdas. Teknologi membuat pemustaka jadi menemukan suatu bacaan lewat katalog online, sehingga informasi ilmiah yang tersembunyi menjadi lebih mudah muncul di hasil pencarian. 
 
-Ancaman siber yang umum terjadi meliputi malware, phishing, pencurian data, serta serangan denial of service yang dapat mengganggu operasional sistem. Serangan ini dapat menyebabkan kerugian besar, seperti kebocoran data pengguna, hilangnya informasi penting, hingga terganggunya layanan kepada masyarakat. 
+Berikutnya prinsip Save the Time of the Reader, teknologi berperan dalam menghemat waktu dengan akses terbuka melalui  sistem online. Sehingga, dapat mengurangi waktu pencarian dan sistem peminjaman fisik. Pemustaka dapat mengunduh bahan pustaka tanpa menunggu waktu prosesnya yang cukup panjang. Sehingga, dapat menghemat waktu pemustaka. 
 
-Selain faktor teknologi, faktor manusia juga menjadi penyebab utama kerentanan keamanan. Rendahnya kesadaran pengguna terhadap keamanan digital, penggunaan kata sandi yang lemah, serta kurangnya pelatihan bagi staf perpustakaan dapat meningkatkan risiko terjadinya serangan siber. 
-
-Di sisi lain, sistem teknologi informasi tidak pernah sepenuhnya aman karena selalu memiliki potensi kerentanan yang dapat dimanfaatkan oleh pihak tidak bertanggung jawab. Oleh karena itu, keamanan siber menjadi sangat penting untuk melindungi tiga aspek utama, yaitu kerahasiaan, integritas, dan ketersediaan informasi. 
-
-Selain melindungi data, keamanan siber juga berperan dalam menjaga kepercayaan publik terhadap perpustakaan dan lembaga arsip. Jika terjadi kebocoran data atau gangguan layanan, kepercayaan pengguna dapat menurun dan berdampak pada fungsi perpustakaan sebagai penyedia informasi yang andal.  
-
----
+Terakhir prinsip The Library is a Growing Organism, teknologi dapat membuat perpustakaan jadi berkembang, lewat ruang penyimpanan digital yang tidak pernah ada habisnya. Sehingga, perpustakaan dapat menambahkan koleksi akses terbuka dan berkerja sama dengan pihak luar untuk memperluas sumber informasinya. Nah, tugas pustakawan pun harus mampu beradaptasi terhadap teknologi yang  selalu berubah-ubah. Sebab, teknologi ini lah yang menjadi awal dalam mengelola perpustakaan yang relevan dan bertumbuh di era 4.0.
 
 ## Kesimpulan
-
-Keamanan siber dalam perpustakaan dan lembaga arsip digital dilatarbelakangi oleh meningkatnya digitalisasi layanan, berkembangnya ancaman siber, serta adanya kelemahan pada faktor manusia dan sistem teknologi. Oleh karena itu, penerapan keamanan siber sangat penting untuk melindungi data, menjaga kelangsungan layanan, serta mempertahankan kepercayaan pengguna terhadap institusi informasi.  
-
----
+Dengan adanya teknologi dapat membuat akses terbuka menjadi terwujud. Teknologi menghasilkan jangkauan informasi menjadi lebih luas dan mudah diakses. Dengan prinsip dasar ilmu perpustakaan yang dijelaskan di atas, teknologi menjadi alat yang paling penting dalam memastikan bahwa setiap orang memiliki kesempatan yang sama dalam mengakses informasi dan memperoleh pengetahuan.
 
 ## Daftar Pustaka
+-	Aminah Julianti, S. (2022). Kompetensi seorang pustakawan dalam menguasai teknologi informasi untuk mengelola perpustakaan digital pada era 4.0. LIBRIA, 14(2), 185-194. https://doi.org/10.22373/16809
+-	Prasetyo, A., dkk. (2024). Transformasi digital: Tantangan dan peluang bagi perpustakaan di era digital. Blantika: Multidisciplinary Journal, 2(4), 284-295. https://blantika.publikasiku.id/index.php/bl/article/view/284
+-	Ranganathan, S. R. (1931). The five laws of library science. Madras Library Association.
 
-- Christen, M., Gordijn, B., & Loi, M. (2020). *Etika Keamanan Siber*. Springer Open.  
-- Azibaev, A. G., dkk. (2026). *Cybersecurity Risk Modeling in Library Information Infrastructure*. IJISS.   
-- Hayes, A. Y., dkk. (tanpa tahun). *Etika Keamanan Siber pada Perpustakaan dan Lembaga Arsip Digital: Tantangan dan Strategis*. 
