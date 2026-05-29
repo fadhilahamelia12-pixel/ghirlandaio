@@ -105,9 +105,9 @@ Anda diminta oleh atasan anda mempersiapkan server untuk aplikasi perpustakaan. 
 
 ### output:
 1. File cast dari asciinema, file cast yang dikumpulkan adalah semua percobaan yang dilakukan. Sehingga file yang dikumpulkan tidak hanya satu file.
+2. Untuk sistem operasi bisa menggunakan amanda yang secara default telah memiliki asciinema, sehingga perekaman bisa dilakukan tanpa SSH dan tampulan antarmuka. Operating system dapat di unduh di sini [download](https://packer.yuros.org/)
 2. project github, minta kepada administrator kelas untuk membuat project baru dengan model iteratif.
 3. Rekaman audio dari proses yang dikerjakan.
-
 
 ## Audience
 1. Untuk setiap anggota kelas, mulai minggu ini sesi kelas akan diberikan 1 minggu setelah tugas presentator di release. Tepatnya tanggal 5 juni 2026.
