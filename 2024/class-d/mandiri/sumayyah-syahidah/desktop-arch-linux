@@ -139,4 +139,3 @@ reboot
 
 Ketik `exit` untuk keluar dari chroot, lalu `umount -R /mnt` untuk melepas semua partisi dengan aman agar data tersimpan dengan benar ke disk. Terakhir, `reboot` — dan jangan lupa **cabut flashdisk** saat logo BIOS muncul.
 
-Selamat, sistem Arch Linux Hardened-mu siap! 🎉
