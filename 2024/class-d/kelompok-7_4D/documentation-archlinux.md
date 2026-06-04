@@ -396,6 +396,13 @@ rm -fr booster-linux-lts.img
 ```
 bootctl --path=/boot install
 ```
+### Jika gagal muncul di boot option kalian keluar terlebih dahulu dari arch-chroot
+```
+exit
+```
+```
+bootctl --path=/mnt/boot install
+```
 
 ```
 nvim /boot/loader/entries/booster.conf
