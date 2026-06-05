@@ -1,5 +1,0 @@
-## TERMINALIZER INSTALLASI ARCH ##
-
----
-
-
