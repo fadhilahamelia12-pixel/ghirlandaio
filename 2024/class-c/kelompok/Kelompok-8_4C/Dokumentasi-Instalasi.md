@@ -39,4 +39,10 @@ boot = 4G (EFI system)
 root = 44.8G (Linux filesystem)
 ```
 
+Melihat Partisi yang telah dibuat
+```
+lsblk
+```
 
+---
+## Enkripsi 
