@@ -276,6 +276,16 @@ reboot
 
 # after installation
 
+## network
+```
+nvim /etc/iwd/main.conf
+```
+> tambahkan
+```
+[General]
+EnableNetworkConfiguration=true
+```
+
 ## disable module
 
 ```
@@ -323,13 +333,4 @@ sudo firewall-cmd --zone=public --add-service=https --permanent
 ```
 ```
 sudo firewall-cmd --permanent --zone=public --add-service=ssh
-```
-```
-sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="ip-worker" port port="2377" protocol="tcp" accept'
-```
-```
-sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="ip-worker" port port="7946" protocol="tcp" accept'
-```
-```
-sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="ip-worker" port port="7946" protocol="udp" accept'
 ```
