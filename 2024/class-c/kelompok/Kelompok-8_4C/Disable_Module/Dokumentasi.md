@@ -1,35 +1,57 @@
 # DOKUMENTASI DISABLE MODULE KERNEL
 
-## Konfigurasi Jaringan
-```
-nvim /etc/iwd/main.conf
-```
-> Biarkan tetap sepertu itu, lalu esc :wq
-```
-systemctl restart iwd
-```
-```
-iwctl
-```
-Connect Wifi
-```
-station wlan0 get-networks
-```
-```
-station wlan0 connect (nama wifi)
-```
-```
-exit
-```
-```
-ping 8.8.8.8
-```
-
----
 ## Blacklist modul kernel via Modprobe
 ```
-nvim /etc/modprobe.d/01-hardening.conf
+nvim /etc/modprobe.d/modprobe.conf
 ```
+Masukan ini semua
+```
+blacklist hfs
+
+install hfsplus /bin/false
+blacklist hfsplus
+
+install jffs2 /bin/false
+blacklist jffs2
+
+install overlay /bin/false
+blacklist overlay
+
+install squashfs /bin/false
+blacklist squashfs
+
+install udf /bin/false
+blacklist udf
+
+install firewire_core /bin/false
+blacklist firewire_core
+
+install usb_storage /bin/false
+blacklist usb_storage
+
+install ceph /bin/false
+blacklist ceph
+
+install cifs /bin/false
+blacklist cifs
+
+install exfat /bin/falsae
+blacklist exfat
+
+install fscache /bin/false
+blacklist fscache
+
+install fuse /bin/false
+blacklist fuse
+
+install gfs2 /bin/false
+blacklist gfs2
+
+install nfs_common /bin/false
+```
+
+
+        
 > Biarkan seperti itu, lalu esc :wq
 
 Mencopot Modul yang sedang aktif secara Instan

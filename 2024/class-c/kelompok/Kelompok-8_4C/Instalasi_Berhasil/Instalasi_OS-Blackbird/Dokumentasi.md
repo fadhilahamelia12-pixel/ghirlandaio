@@ -283,6 +283,27 @@ Pengecekan file Booting
 ls
 ```
 ```
+mkdir efi kernel
+```
+```
+cd efi/
+```
+```
+mkdir linux
+```
+```
+cd ..
+```
+```
+ls
+```
+```
+mv vmlinuz-linux-hardened amd-ucode.img kernel/
+```
+```
+ls
+```
+```
 rm -fr initramfs-linux-hardened.img
 ```
 ```

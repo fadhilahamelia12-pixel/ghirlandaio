@@ -79,6 +79,17 @@ mkfs.ext4 /dev/pudding/vars
 ```
 mount --mkdir -o rw,nodev,nosuid,relatime /dev/pudding/vars /mnt/var
 ```
+### tmp
+
+```
+lvcreate -L 15G pudding -n tmp
+```
+```
+mkfs.ext4 /dev/pudding/tmp
+```
+```
+mount --mkdir -o rw,nodev,nosuid,relatime /dev/pudding/tmp /mnt/tmp
+```
 ### vtemp
 ```
 lvcreate -L 1G pudding -n vtemp
@@ -139,7 +150,7 @@ lspci
 > untuk melihat jenis hardware
 
 ```
-pacstrap /mnt intel-ucode base pacman sudo linux-lts linux-lts-headers lvm2 mkinitcpio linux-firmware-intel docker neovim git iwd asciinema firefox linux-firmware-realtek firewalld
+pacstrap /mnt intel-ucode base pacman sudo linux-lts linux-lts-headers lvm2 mkinitcpio linux-firmware-intel docker neovim git iwd asciinema linux-firmware-realtek firewalld
 ```
 # regist partisi
 ```
@@ -242,6 +253,15 @@ bootctl --path=/boot install
 ```
 mkinitcpio -P
 ```
+```
+systemctl enable iwd
+```
+```
+systemctl enable systemd-networkd.socket
+```
+```
+systemctl enable systemd-resolved
+```
 # finish installation
 ```
 exit
@@ -252,5 +272,65 @@ umount -R /mnt
 ```
 reboot
 ```
+---
 
+# after installation
 
+## network
+```
+nvim /etc/iwd/main.conf
+```
+> tambahkan
+```
+[General]
+EnableNetworkConfiguration=true
+```
+
+## disable module
+
+```
+nvim /etc/modprobe.d/hardening.conf
+```
+
+> isi
+
+```
+install    cramfs           /bin/false
+blacklist  cramfs
+
+install    freexfs          /bin/false
+blacklist  freexfs
+
+install    hfs              /bin/false
+blacklist  hfs
+
+install    hfsplus          /bin/false
+blacklist  hfsplus
+
+install    jffs2            /bin/false
+blacklist  jffs2
+
+install    udf              /bin/false
+blacklist  udf
+
+install    fire-wire-core   /bin/false
+blacklist  fire-wire-core
+
+install    usb_storage      /bin/false
+blacklist  usb_storage
+```
+
+## setup firewalld
+
+```
+systemctl enable --now firewalld
+```
+```
+sudo firewall-cmd --zone=public --add-service=http --permanent 
+```
+```
+sudo firewall-cmd --zone=public --add-service=https --permanent
+```
+```
+sudo firewall-cmd --permanent --zone=public --add-service=ssh
+```
