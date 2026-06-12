@@ -1,4 +1,4 @@
-# penugasan kelompok 9
+# penugasan kelompok 10
 
 # PERHATIAN
 Berdasarkan proses assesment terhadap penugasan, maka diharapkan hal berikut menjadi perhatian bagi peserta didik,
@@ -10,104 +10,49 @@ Berdasarkan proses assesment terhadap penugasan, maka diharapkan hal berikut men
 
 ## presentator
 
-Anda diminta oleh atasan anda mempersiapkan server untuk aplikasi perpustakaan dengan ketentuan layout di bawah.  Anda di haruskan mengimplementasikan protokol CIS untuk server dari referensi distro lain.Dalam proses installasi, anda tidak diberikan akses SSH, jadi anda harus melakukan deployment secara langsung. Anda akan melakukan deployment dalam mode native.
+Anda adalah seorang Pegawai di perpustakaan Daerah, karena ada kebijakan Satu data, maka anda diminta mengerjakan sistem perpustakaan dan arsip didalam satu server dengan metode remote. Beradasarkan informasi dari Kementerian Riset Dan Teknologi informasi,  Anda di haruskan mengimplementasikan protokol CIS pada layer workstation dan server.Berikut diagram arsitektur yang diberikan sebagai panduan anda dalam melakukan deployment.
 
 ### layout
-
+<img width="726" height="551" alt="photo_6152368857583129425_x" src="https://github.com/user-attachments/assets/e0729cfd-86f8-4d8d-8746-6c217342fa8d" />
 
 
 ### Kelas A
+- Aplikasi yang di install adalah atom 
+- Memastikan keamanan sistem komputer dikonfigurasikan secara ketat
+- Memastikan performa sistem komputer dalam performa terbaik
+- Indikator penilaian minimum adalah implementasi tingkat keamanan dan performa yang telah di pelajari
 
-- Aplikasi yang di install adalah atom
-- Menggunakan apache sebagai webserver, mariadb sebagai database, dan php
-- Impelementasi CIS Server secara keseluruhan
-- Aplikasi bisa diakses secara dalam jaringan local
-- Firewall telah terkonfigurasi sesuai dengan layout di atas
-- Operating sistem telah terkonfigurasi sesuai dengan layout di atas
-- Disable module kernel yang tidak diperlukan
-- Hardening pada layer kernel
-- metode yang digunakan adalah metode CLI 
-- Dilarang menggunakan package base-devel, jika di butuhkan aplikasi pendukung install secara mandiri di luar package meta base-devel
-- meggunakan kernel linux-lts
-- kontainer yang digunakan adalah podman
-- data, service,aplikasi berada di dalam kontainer yang berbeda yang berbeda
-- setiap orang memahami setiap alur pekerjaan, 
-- diharuskan menggunakan project pada github project,
-- pemahaman terhadap langkah yang diguanakan, tidak hanya sebatas eksekusi
 
 
 ### Kelas B
-
 - Aplikasi yang di install adalah omeka
-- Menggunakan apache sebagai webserver, mariadb sebagai database, dan php 
-- Impelementasi CIS Server secara keseluruhan
-- Aplikasi bisa diakses secara dalam jaringan local
-- Firewall telah terkonfigurasi sesuai dengan layout di atas
-- Operating sistem telah terkonfigurasi sesuai dengan layout di atas
-- Disable module kernel yang tidak diperlukan
-- Hardening pada layer kernel
-- metode yang digunakan adalah metode CLI 
-- Dilarang menggunakan package base-devel, jika di butuhkan aplikasi pendukung install secara mandiri di luar package meta base-devel
-- meggunakan kernel linux-lts
-- kontainer yang digunakan adalah podman
-- data, service,aplikasi berada di dalam kontainer yang berbeda yang berbeda
-- setiap orang memahami setiap alur pekerjaan, 
-- diharuskan menggunakan project pada github project,
-- pemahaman terhadap langkah yang diguanakan, tidak hanya sebatas eksekusi
+- Memastikan keamanan sistem komputer dikonfigurasikan secara ketat
+- Memastikan performa sistem komputer dalam performa terbaik
+- Indikator penilaian minimum adalah implementasi tingkat keamanan dan performa yang telah di pelajari
 
 ### Kelas C
-
 - Aplikasi yang di install adalah slims
-- Menggunakan apache sebagai webserver, mariadb sebagai database, dan php 
-- Impelementasi CIS Server secara keseluruhan
-- Aplikasi bisa diakses secara dalam jaringan local
-- Firewall telah terkonfigurasi sesuai dengan layout di atas
-- Operating sistem telah terkonfigurasi sesuai dengan layout di atas
-- Disable module kernel yang tidak diperlukan
-- Hardening pada layer kernel
-- metode yang digunakan adalah metode CLI 
-- Dilarang menggunakan package base-devel, jika di butuhkan aplikasi pendukung install secara mandiri di luar package meta base-devel
-- meggunakan kernel linux-lts
-- kontainer yang digunakan adalah podman
-- data, service,aplikasi berada di dalam kontainer yang berbeda yang berbeda
-- setiap orang memahami setiap alur pekerjaan, 
-- diharuskan menggunakan project pada github project,
-- pemahaman terhadap langkah yang diguanakan, tidak hanya sebatas eksekusi
+- Memastikan keamanan sistem komputer dikonfigurasikan secara ketat
+- Memastikan performa sistem komputer dalam performa terbaik
+- Indikator penilaian minimum adalah implementasi tingkat keamanan dan performa yang telah di pelajari
+- 
 ## Kelas D
-
 - Aplikasi yang di install adalah arteri
-- Menggunakan apache sebagai webserver, mariadb sebagai database, dan php 
-- Impelementasi CIS Server secara keseluruhan
-- Aplikasi bisa diakses secara dalam jaringan local
-- Firewall telah terkonfigurasi sesuai dengan layout di atas
-- Operating sistem telah terkonfigurasi sesuai dengan layout di atas
-- Disable module kernel yang tidak diperlukan
-- Hardening pada layer kernel
-- metode yang digunakan adalah metode CLI 
-- Dilarang menggunakan package base-devel, jika di butuhkan aplikasi pendukung install secara mandiri di luar package meta base-devel
-- meggunakan kernel linux-lts
-- kontainer yang digunakan adalah podman
-- data, service,aplikasi berada di dalam kontainer yang berbeda yang berbeda
-- setiap orang memahami setiap alur pekerjaan, 
-- diharuskan menggunakan project pada github project,
-- pemahaman terhadap langkah yang diguanakan, tidak hanya sebatas eksekusi
+- Memastikan keamanan sistem komputer dikonfigurasikan secara ketat
+- Memastikan performa sistem komputer dalam performa terbaik
+- Indikator penilaian minimum adalah implementasi tingkat keamanan dan performa yang telah di pelajari
 
 
 ### penilaian
-- kemampuan team dalam pelaksaan project
-- kemampuan team dalam implementasi protokol CIS
+- pengetahuan kompreshensif terkait kemananan berdasarkan materi sebelumnya
+- pengetahuan kompreshensif terkait performance berdasarkan materi sebelumnya
+- pengetahuan kompresehnsif terkait akses dan autorisasi
 - mampu menjelaskan implementasi yang digunakan dalam dalam setiap konfigurasi
-- server lulus audit keamanan berdasarkan protokol CIS
-- mampu menjelaskan dampak keamanan dari package base-devel sehingga penggunaan package meta base-devel di hindari
-
 
 ## peraturan
-- jika gagal dalam, merencanakan dan menggunakan project management maka penusasan akan di anggap gagal
-- pastikan upload bukti berupa file cast pada setiap task yang berada di dalam github project.
-- presentator hanya diberikan 1 kali untuk presentasi 
-
-
-### pengumpulan
+- jika tidak menggunakan planing menggunakan project management maka penusasan akan di anggap gagal
+- pastikan upload bukti berupa file cast yang dalam setiap percobaan kedalam github project.
+- presentator hanya diberikan 1 kali untuk presentasi
 - presentator mengumpulkan penugasan di dalam repo penguasan masing masing pada hari Rabu, 17 Juni 2026 jam 07.30 AM  
 - keterlambatan pengumpulan tugas di berikan sanksi pemberian pinalti penilaian sebesar 100%.  
 
@@ -117,16 +62,11 @@ Anda diminta oleh atasan anda mempersiapkan server untuk aplikasi perpustakaan d
 3. project github, minta kepada administrator kelas untuk membuat project baru dengan model iteratif.
 4. Rekaman audio penjelasan dari setiap file cast yang dikerjakan.
 5. File dokumentasi
-6. untuk penggunaan asccinema telahbisa menggunakan panduan yang berada didalam direktori tutor yang telah disusun oleh saudara Ridho.
+
 
 ## Audience
-1. Untuk setiap anggota kelas, dimulai sama dengan waktu pengerjaan presentator 
-2. Mulai dari sesi ini penugasan audience dan presentator sama. 
-3. Waktu pengumpulan penugasan audience dikumpulkan hari Jumat, 19 Juni 2026, setelah penugasan keluar .
-4. Dengan pertimbangan situasi presentator pada minggu ini,mulai pertemuan ini audience tidak disarankan menunggu hasil presentator.
-5. Disarankan untuk memulai pembelajaran mandiri menggunakan file penugasan presentator. 
-5.  waktu pengumpulan audience secara serentak akan ditutup pada hari Jumat Tanggal 19 Juni jam 23.59 WIB.  
-5. Disarakan untuk eksplorasi dan latihan mandiri terkait tugas menggunakan file penugasan presentator.
-6. Tidak disarankan untuk menunggu hasil presentator
-7. Audience akan di acak menggunakan engine untuk di uji pada pertemuan selajutnya, sebelum presentasi di mulai.
-8. Gunakan waktu perkuliahan untuk bertanya terkait kendala anda dalam pelaksanaan eksplorasi penugasan baik ke dosen pengampu atau ke presentator.
+1. waktu pengerjaan audience dimulai sama dengan presentator. terhitung sejak soal ini diupload, sampai dengan jumat tanggal 19, Juni 2026, 15.30 WIB
+2. Kelompok penugasan adalah kelompok pelaksanaan UAS.
+3. Jika kelompok gagal dalam memenuhi standar minimum, maka kelompok di anggap gugur dan tidak bisa mengikuti UAS.
+4. JIka ditemukan indikasi plagiasi, kesamaan yang tidak lazim atau penggunaan Artificial Intelegence maka kelompok di anggap gugur dan tidak bisa mengikuti UAS. 
+5. Gunakan waktu perkuliahan untuk bertanya terkait kendala anda dalam pelaksanaan eksplorasi penugasan baik ke dosen pengampu atau ke presentator.
