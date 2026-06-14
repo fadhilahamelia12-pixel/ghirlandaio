@@ -15,16 +15,16 @@ KELOMPOK 4
 2. Mutia Zakiyyah
 
 KELOMPOK 5
-1. Nazwa Prina Al Atsilah
-2. Marsya Dwi Della
+1. Munazi Julita Pratiwi
+2. Fauziyyah Nurzarha
 
 KELOMPOK 6
 1. Artika
 2. Najwa Azzahra
 
 KELOMPOK 7
-1. Munazi Julita Pratiwi
-2. Fauziyyah Nurzarha
+1. Nazwa Prina Al Atsilah
+2. Marsya Dwi Della
 
 KELOMPOK 8
 1. Siti Nasuhah
