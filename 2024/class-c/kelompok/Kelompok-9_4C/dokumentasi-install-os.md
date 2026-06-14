@@ -37,11 +37,12 @@ system = 50G [linux filesystem]
 #   SETUP LUKS
 
 ```
-cryptsetup luksFormat --sector-size 4096 /dev/partisi
+cryptsetup luksFormat --sector-size 4096 /dev/partisi_system
 ```
 ```
-cryptsetup luksOpen /dev/partisi [creamy]
+cryptsetup luksOpen /dev/partisi_system [creamy]
 ```
+
 ```
 pvcreate /dev/mapper/[creamy]
 ```
@@ -53,7 +54,7 @@ vgcreate [pudding] /dev/mapper/[creamy]
 
 ### root
 ```
-lvcreate 15G pudding -n root
+lvcreate -L 15G pudding -n root
 ```
 ```
 mkfs.ext4 /dev/pudding/root
@@ -71,7 +72,7 @@ mount --mkdir -o uid=0,gid=0,fmask=0077,dmask=0077 /dev/partisi_boot /mnt/boot
 ### vars
 
 ```
-lvcreate 15G pudding -n vars
+lvcreate -L 15G pudding -n vars
 ```
 ```
 mkfs.ext4 /dev/pudding/vars
@@ -79,9 +80,20 @@ mkfs.ext4 /dev/pudding/vars
 ```
 mount --mkdir -o rw,nodev,nosuid,relatime /dev/pudding/vars /mnt/var
 ```
+### tmp
+
+```
+lvcreate -L 2G pudding -n tmp
+```
+```
+mkfs.ext4 /dev/pudding/tmp
+```
+```
+mount --mkdir -o rw,nodev,nosuid,relatime /dev/pudding/tmp /mnt/tmp
+```
 ### vtemp
 ```
-lvcreate 1G pudding -n vtemp
+lvcreate -L 1G pudding -n vtemp
 ```
 ```
 mkfs.ext4 /dev/pudding/vtemp
@@ -91,7 +103,7 @@ mount --mkdir -o rw,nodev,nosuid,noexec,relatime /dev/pudding/vtemp /mnt/var/tmp
 ```
 ### vlog
 ```
-lvcreate 1G pudding -n vlog
+lvcreate  -L 1G pudding -n vlog
 ```
 ```
 mkfs.ext4 /dev/pudding/vlog
@@ -101,7 +113,7 @@ mount --mkdir -o rw,nodev,nosuid,noexec,relatime /dev/pudding/vlog /mnt/var/log
 ```
 ### vaud
 ```
-lvcreate 1G pudding -n vaud
+lvcreate -L 1G pudding -n vaud
 ```
 ```
 mkfs.ext4 /dev/pudding/vaud
@@ -123,7 +135,7 @@ mount --mkdir -o rw,nodev,nosuid,relatime /dev/pudding/dock /mnt/var/lib/docker
 
 ### home
 ```
-lvcreate -l70%FREE pudding -n vaud
+lvcreate -l70%FREE pudding -n home
 ```
 ```
 mkfs.ext4 /dev/pudding/home
@@ -139,11 +151,14 @@ lspci
 > untuk melihat jenis hardware
 
 ```
-pacstrap /mnt intel-ucode base pacman sudo linux-lts linux-lts-headers lvm2 mkinitcpio linux-firmware-intel docker neovim git iwd asciinema
+pacstrap /mnt intel-ucode base pacman sudo linux-lts linux-lts-headers lvm2 mkinitcpio linux-firmware-intel docker neovim git iwd asciinema linux-firmware-realtek firewalld
 ```
 # regist partisi
 ```
 genfstab -U /mnt > /mnt/etc/fstab
+```
+```
+echo "tmpfs /tmp tmpfs defaults,rw,nosuid,nodev,noexec,relatime,size=1G 0 0" >> /mnt/etc/fstab
 ```
 # chroot
 ```
@@ -206,7 +221,7 @@ cd /boot
 mkdir kernel efi
 ```
 ```
-cd /efi
+cd efi
 ```
 ```
 mkdir linux
@@ -217,11 +232,15 @@ cd ..
 ```
 mv vmlinuz-* intel-* kernel
 ```
+>[!NOTE]
+> '*' (artinya klik tab)
 ```
 rm -fr initramfs-*
 ```
+>[!NOTE]
+> '*' (artinya klik tab)
 ```
-mv /etc/mkinicpio.conf /etc/mkinitcpio.d/default.conf
+mv /etc/mkinitcpio.conf /etc/mkinitcpio.d/default.conf
 ```
 ```
 nvim /etc/mkinitcpio.d/default.conf
@@ -239,6 +258,15 @@ bootctl --path=/boot install
 ```
 mkinitcpio -P
 ```
+```
+systemctl enable iwd
+```
+```
+systemctl enable systemd-networkd.socket
+```
+```
+systemctl enable systemd-resolved
+```
 # finish installation
 ```
 exit
@@ -249,5 +277,95 @@ umount -R /mnt
 ```
 reboot
 ```
+---
+
+# after installation
+
+## network
+```
+nvim /etc/iwd/main.conf
+```
+> tambahkan
+```
+[General]
+EnableNetworkConfiguration=true
+```
+
+## disable module
+
+```
+nvim /etc/modprobe.d/hardening.conf
+```
+
+> isi
+
+```
+install    cramfs           /bin/false
 
 
+install    freexfs          /bin/false
+
+
+install    hfs              /bin/false
+
+
+install    hfsplus          /bin/false
+
+
+install    jffs2            /bin/false
+
+
+install    udf              /bin/false
+
+
+install    fire-wire-core   /bin/false
+
+
+install    usb_storage      /bin/false
+
+```
+selanjutnya ketik : 
+```
+mkinitcpio -P
+```
+cek list module :
+```
+lsmod
+```
+```
+lsmod | grep namamodule
+```
+
+## setup firewalld
+
+```
+systemctl enable --now firewalld
+```
+```
+sudo firewall-cmd --zone=public --add-service=http --permanent 
+```
+```
+sudo firewall-cmd --zone=public --add-port=2377/tcp --permanent
+```
+```
+sudo firewall-cmd --zone=public --add-port=7946/tcp --permanent
+```
+```
+sudo firewall-cmd --zone=public --add-port=4789/tcp --permanent
+```
+```
+sudo firewall-cmd --zone=public --add-port=8000/tcp --permanent
+```
+```
+sudo firewall-cmd --zone=public --add-port=5432/tcp --permanent
+```
+```
+sudo firewall-cmd --zone=public --add-port=6379/tcp --permanent
+```
+```
+sudo firewall-cmd --reload
+```
+Selanjutnya, untuk melihat list-list port dan sistem yang sudah di enable ketik:
+```
+sudo firewall-cmd --list-ports
+```
