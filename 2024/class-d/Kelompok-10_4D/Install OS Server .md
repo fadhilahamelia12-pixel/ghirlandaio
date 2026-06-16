@@ -7,15 +7,15 @@ iwctl
 ```
 device list
 ```
-**cek driver wifi setiap laptop
+cek driver wifi setiap laptop
 ```
 station wlan0 get-network
 ```
-**Melihat jaringan yang tersedia
+melihat jaringan yang tersedia
 ```
 station wlan0 scaan
 ```
-**Memindaai jaringan yang ada
+memindaai jaringan yang ada
 ```
 station wlan0 connect "(nama wifi)"
 exit
@@ -24,11 +24,11 @@ exit
 ```
 lsblk
 ```
-**Membagi partisi
+membagi partisi
 ```
 cfdiks /dev/partisi [sda/nvme0n1p1]
 ```
-**minimal partisi
+minimal partisi
 ```
 boot = 3G [EFI system}
 root = 95G [Linux filesystem]
@@ -129,11 +129,11 @@ mount --mkdir -o rw,nosuid,relatime /dev/nama grup]/home /mnt/home
 ```
 mount --mkdir -o rw,nosuid,noexec,relatime /dev/[nama grup]/podman /mnt/var/lib/containers
 ```
-##Periksa 
+## Periksa 
 ```
 lsblk
 ```
-##Install Package
+## Install Package
 ```
 pacstrap /mnt base intel-ucode linux-lts linux-lts-headers linux-firmware mkinitcpio lvm2 sudo curl neovim iwd firewalld pacman podman
 ```
@@ -166,7 +166,7 @@ hwclock --systohc
 ```
 nvim /etc/locale.gen
 ```
-**agar pencarian lebih cepat, bisa mengklik tanda "/"
+agar pencarian lebih cepat, bisa mengklik tanda "/"
 ```
 locale-gen
 ```
@@ -246,14 +246,14 @@ sfallback_config="/etc/nkinitcpio.conf"
 ```
 bootctl --path=/mnt/boot install
 ```
-**untuk yang bukan lenovo bisa lanjut ke tahap betikutnya, tetapi khusus device lenovo disarankan mengikuti ini:
+untuk yang bukan lenovo bisa lanjut ke tahap betikutnya, tetapi khusus device lenovo disarankan mengikuti ini:
 ```
 exit
 ```
 ```
 bootctl --path=/mnt/boot install
 ```
-**kemudian masuk kembali ke sistem
+kemudian masuk kembali ke sistem
 ```
 arch-chroot /mnt
 ```
@@ -273,14 +273,14 @@ exit
 ```
 umount -R /mnt
 ```
-**mematikan asciinema
+mematikan asciinema
 ```
 ctrl+d
 ```
 ```
 asciinema upload [nama file],cast
 ```
-**foto link asciinema
+foto link asciinema
 ```
 reboot
 
