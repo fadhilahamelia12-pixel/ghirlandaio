@@ -134,3 +134,155 @@ mount --mkdir -o rw,nosuid,noexec,relatime /dev/[nama grup]/podman /mnt/var/lib/
 lsblk
 ```
 ##Install Package
+```
+pacstrap /mnt base intel-ucode linux-lts linux-lts-headers linux-firmware mkinitcpio lvm2 sudo curl neovim iwd firewalld pacman podman
+```
+## Fstab
+```
+genfstab -U /mnt > /mnt/etc/fstab
+```
+## Mensetting jaringan
+```
+cp /etc/systemd/network/* /mnt/etc/systemd/network
+```
+## Formating Tmpfs ke tmp
+```
+echo "tmpfs /tmp tmpfs defaults, nosuid,noexec,size=1G 0 0" >> /mnt/etc/fstab
+```
+## Memeriksa kembali
+```
+cat /mnt/etc/fstab
+```
+## Masuk ke Dalam Sistem
+```
+arch-chroot /mnt
+```
+## Mensiknronisasi Waktu
+```
+ln -sf /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
+hwclock --systohc
+```
+## Mengatur Bahasa dan Lokasi
+```
+nvim /etc/locale.gen
+```
+agar pencarian lebih cepat, bisa mengklik tanda "/"
+```
+locale-gen
+```
+``` 
+locale > /etc/locale.conf
+```
+```
+nvim /etc/locale.conf
+
+```
+```
+isi lang=C menjadi lang=en_US.UTF-8 dan 
+isi ALL=en_US.UTF-8
+```
+## Membuat User
+```
+useradd -m kelompok10
+```
+```
+passwd kelompok10
+```
+```
+echo "luqman ALL=(ALL:ALL) ALL" >  /etc/sudoers.d/luqman
+```
+## Mengatur Parameter
+```
+mkdir /etc/cmdline.d
+```
+```
+touch /etc/cmdline.d/{01-boot.conf,02-misc.conf}
+```
+```
+echo "rd.luks.name=$(blkid -s UUID -o value /dev/partisi root)=nama device root=/dev/nama grup/root" > /etc/cmdline.d/01-boot.conf
+```
+```
+echo "rw" > /etc/cmdline.d/02-misc.conf
+```
+## Mengatur Mkinitcpio
+```
+nvim /etc/mkinitcpio.conf
+```
+```
+tambahkan kalimat sesudah "block"
+This will create a systend based initramfs which loads an encrypted root filesysten.
+HOOKS=(base systend autodetect microcode modconf kas keyboard sd-vconsole block sd-encrypt filesystens fsck
+
+NOTE: If you have /usr on a separate partition, you MUST include the usr and fsck hooks.
+HOOKS (base systend autodetect migrocode modconf kms keyboard sd-vconsole block [sd-encrypt lvm2] filesystems fsck)
+
+COMPRESSION
+is used for Linux 5.9 and gzip compression is used for Linux < 5.9.
+Use 'cat' to create an uncompressed image.
+```
+```
+nvim /etc/mkinitcpio.d/linux-lts.preset
+```
+ikutin yang ada di sini
+```
+ALL_config="/etc/nkinitcpio.d/default.conf"
+ALL kuer="/boot/kernel/vmlinuz-linux-lts"
+ALL kerneldest="/boot/kernel/unlinuz-linux-lts"
+
+PRESETS-('default')
+#PRESETS-('default' 'fallback')
+#default_config="/etc/nkinitcpio.conf"
+
+#default_inage="/boot/initranfs-linux-lts.ing"
+default uki="/boot/efi/linux/arch-linux-lts.efi"
+#default_options="-splash /usr/share/systend/bootct1/splash-arch.
+
+sfallback_config="/etc/nkinitcpio.conf"
+#fallback inage="/boot/initranfs-linux-its-fallback.ing"
+#fallback_uki="/efi/EFI/Linux/arch-linux-Its-fallback.efi"
+#fallback_options="-S autodetect"
+```
+## Menginstall Bootctl
+```
+bootctl --path=/mnt/boot install
+```
+untuk yang bukan lenovo bisa lanjut ke tahap betikutnya, tetapi khusu device lenovo disarankan mengikuti ini:
+```
+exit
+```
+```
+bootctl --path=/mnt/boot install
+```
+kemudian masuk kembali ke sistem
+```
+arch-chroot /mnt
+```
+```
+mkinitcpio -P
+```
+## Aktifkan sistem berikut:
+```
+systemctl enable systemd-networkd
+systemctl enable systemd-resolved 
+systemctl enable iwd
+```
+## BOOTING
+```
+exit
+```
+```
+umount -R /mnt
+```
+mematikan asciinema
+```
+ctrl+d
+```
+```
+asciinema upload [nama file],cast
+```
+foto link asciinema
+```
+reboot
+
+
+
