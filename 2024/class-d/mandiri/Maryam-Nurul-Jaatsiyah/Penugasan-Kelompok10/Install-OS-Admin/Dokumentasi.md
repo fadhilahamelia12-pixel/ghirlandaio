@@ -116,9 +116,9 @@ nvim /etc/locale.gen
 locale-gen
 locale > /etc/locale.conf
 nvim /etc/locale.conf
+```
 >bagian LANG=C.UTF-8 diubah menjadi LANG=en_US.UTF-8
 >bagian LC_ALL= ditambahkan en_US.UTF-8
-```
 ## Membuat user
 ```
 useradd -m sagitariusadmin
@@ -144,6 +144,7 @@ nvim /etc/mkinitcpio.conf
 >search HOOKS paling bawah, tambahkan sd-encrypt lvm2 setelah kata "sd-vconsole block"
 ```
 nvim /etc/mkinitcpio.d/linux-lts.preset
+```
 >hapus semua hastag pada baris ALL
 >tambahkan hastag pada default_image
 >bagian default_uki hapus hastag dan kata "efi" pertama diganti boot
