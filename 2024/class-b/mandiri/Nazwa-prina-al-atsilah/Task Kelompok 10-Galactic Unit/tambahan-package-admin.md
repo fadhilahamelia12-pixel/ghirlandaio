@@ -1,3 +1,5 @@
+kami menggunakian linux lts kelompok 9 dengan tampilan desktop, jadi kami menginstall package yang diperlukan
+
 ## 1. Mengecek Git
 git --version                                                                                                                                                          git version 2.54.0          
 
