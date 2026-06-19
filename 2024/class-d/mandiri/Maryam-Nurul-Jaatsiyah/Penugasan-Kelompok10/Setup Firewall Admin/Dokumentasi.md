@@ -17,13 +17,13 @@ firewall-cmd --info-zone=public
 ```
 ## menghapus izin service client
 ```
-firewall-cmd=--zone=public --remove-service=dhcpv6-client --permanent
+firewall-cmd --zone=public --remove-service=dhcpv6-client --permanent
 ```
 ## memuat ulang firewall agar perubahannya bisa diterapkan
 ```
 firewall-cmd --reload
 ```
-## mengecek firewall xone public
+## mengecek firewall zone public
 ```
 firewall-cmd --info-zone=public
 ```
